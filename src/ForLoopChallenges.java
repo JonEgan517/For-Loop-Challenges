@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class ForLoopChallenges 
 {
@@ -24,40 +25,71 @@ public class ForLoopChallenges
 	{
 		for(int i = 1; i <= 5; i++)
 		{
-			for(int j = 5; j >= 1; j++)
-			{
-			System.out.println(i + " " + j);
-			}
+			System.out.println(i);
+		}
+		for(int j = 5; j >= 1; j--)
+		{		
+			System.out.println(j);
 		}
 	}
-
 	private static void multiples() 
 	{
-		
-		
+		for(int i = 5; i <= 100; i+= 5)
+		{
+			System.out.println(i);
+		}
 	}
 
 	private static void totalOfMultiples() 
 	{
-		// TODO Auto-generated method stub
-		
+		int sum = 0;
+		for(int i = 5; i <= 100; i+= 5)
+		{
+			sum +=i;
+		}
+		System.out.println("Total is " + sum);
 	}
 
 	private static void lowerBoundUpperBound() 
 	{
-		// TODO Auto-generated method stub
+		Scanner userInput = new Scanner(System.in);
+		System.out.println("Choose a small number.");
+		int lowerBound = userInput.nextInt();
+		System.out.println("Now choose a higher number, and I will add all the numbers in range.");
+		int upperBound = userInput.nextInt();
 		
+		int sum = 0;
+		for(int i = lowerBound; i <= upperBound; i++)
+			{
+				
+				System.out.println(i);
+				sum +=i;
+				
+			}
+		System.out.println("The sum of the number in between is " + sum + ".");
 	}
 
 	private static void rectangleAsterisks() 
 	{
-		// TODO Auto-generated method stub
-		
+		{
+			System.out.println("*********");
+		}
+	for (int i = 1; i < 9; i++)
+		{
+			System.out.println("*       *");
+		}
+		{
+			System.out.println("*********");
+		}	
 	}
 
 	private static void extraCredit() 
 	{		
-		// TODO Auto-generated method stub
+		
+		for(int i = 9+1; i < 51; i+= 9+1)
+		{
+			System.out.println(i);
+		}
 		
 	}
 }
