@@ -3,13 +3,13 @@ public class ForLoopChallenges
 {
 	public static void main(String[] args)
 	{
-		//iLoveDonuts();
+		iLoveDonuts();
 		ascendingDescending();
-		//multiples();
-		//totalOfMultiples();
-		//lowerBoundUpperBound();
-		//rectangleAsterisks();
-		//extraCredit();	
+		multiples();
+		totalOfMultiples();
+		lowerBoundUpperBound();
+		rectangleAsterisks();
+		extraCredit();	
 	}
 
 	private static void iLoveDonuts() 
@@ -24,7 +24,10 @@ public class ForLoopChallenges
 	{
 		for(int i = 1; i <= 5; i++)
 		{
-			System.out.println(i);
+			for(int j = 5; j >= 1; j++)
+			{
+			System.out.println(i + " " + j);
+			}
 		}
 	}
 
